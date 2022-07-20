@@ -1,3 +1,4 @@
+/* -------common style ------ */
 body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -15,6 +16,7 @@ footer {
 
 }
 
+/* ------top part style ----*/
 .top-part {
     background: #161616;
     border-radius: 30px;
@@ -25,6 +27,7 @@ footer {
     margin-right: 140px;
     margin-left: 140px;
     margin-bottom: 130px;
+
 }
 
 .live-match {
@@ -40,6 +43,7 @@ footer {
 
 }
 
+/* ----Live match schedule and blogs style ----- */
 .transfer-live {
     margin-top: 50px;
     margin-right: 140px;
@@ -49,12 +53,14 @@ footer {
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    /* justify-content: center; */
+
 
 
 }
 
 .side-itmes {
-    grid-row: 1/4;
+    grid-row: 1/-1;
 }
 
 .sidevar {
@@ -65,8 +71,8 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     color: white;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
 }
 
 .sidevar a {
@@ -74,9 +80,9 @@ footer {
     color: black;
     background-color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 10px 5px;
     border-radius: 5px;
-    margin: 5px 5px;
+    margin: 5px 20px;
 
 }
 
@@ -87,11 +93,14 @@ footer {
 
 .blogs {
     width: auto;
+    background-color: whitesmoke;
+    border-radius: 15px;
 
 
 
 }
 
+/* ----footer style------ */
 .goal h2 {
     text-align: center;
 }
@@ -115,4 +124,103 @@ footer {
 .menu a {
     text-decoration: none;
     color: white;
+}
+
+/*--- ----media queries------------------ */
+
+/* ------For mobile device -------*/
+@media only screen and (max-width:688px) {
+    .top-part {
+        background: #161616;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .news-text {
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sidevar {
+        background: none;
+    }
+
+    .match-button,
+    .Groups-button {
+        border: 1px solid rgba(128, 128, 128, 0.411);
+
+    }
+
+    .transfer-live {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    footer {
+        color: white;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+
+    }
+
+    .menu {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* ----tablet deviceses-------- */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .top-part {
+        background: #161616;
+        border-radius: 30px;
+        display: flex;
+        width: 100%;
+
+    }
+
+    .transfer-live {
+        margin-top: 50px;
+        margin-right: 140px;
+        margin-left: 140px;
+        margin-bottom: 130px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+    }
+
+    .sidevar {
+        background: none;
+    }
+
+    .match-button,
+    .Groups-button {
+        border: 1px solid rgba(128, 128, 128, 0.411);
+
+    }
+
+    .side-itmes {
+        grid-column: 1/-1;
+    }
+
+    footer {
+        color: white;
+        text-align: center;
+        background-color: black;
+        padding: 10px 5px;
+        width: 100%;
+    }
 }
