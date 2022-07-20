@@ -71,8 +71,8 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     color: white;
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .sidevar a {
