@@ -1,4 +1,118 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
+
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px 5px;
+
+
+
+
+}
+
+.top-part {
+    background: #161616;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-right: 140px;
+    margin-left: 140px;
+    margin-bottom: 130px;
+}
+
+.live-match {
+    color: white;
+}
+
+.button {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    background: #DD0000;
+    border-radius: 5px;
+
+}
+
+.transfer-live {
+    margin-top: 50px;
+    margin-right: 140px;
+    margin-left: 140px;
+    margin-bottom: 130px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+
+}
+
+.side-itmes {
+    grid-row: 1/4;
+}
+
+.sidevar {
+
+    background: #161616;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.sidevar a {
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 5px;
+
+}
+
+.transfer-live .Blogs-button {
+    background-color: red;
+    color: white;
+}
+
+.blogs {
+    width: auto;
+
+
+
+}
+
+.goal h2 {
+    text-align: center;
+}
+
+.goal hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.menu {
+
+    display: flex;
+    gap: 20px;
+    padding: 80px;
+    margin-left: 200px;
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    color: white;
 }
