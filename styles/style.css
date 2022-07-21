@@ -18,8 +18,14 @@ footer {
 }
 
 /* ------top part style ----*/
-.top-part:hover {
-    background-color: lightslategray;
+@keyframes top-part {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
 }
 
 .top-part {
@@ -32,7 +38,33 @@ footer {
     margin-right: 140px;
     margin-left: 140px;
     margin-bottom: 130px;
+    animation: animate 3s ease-in-out infinite alternate-reverse forwards;
 
+}
+
+/* --------
+--------top part animation-------
+ ------- */
+@keyframes animate {
+    0% {
+        background-color: dimgray;
+    }
+
+    25% {
+        background-color: darkslategray;
+    }
+
+    50% {
+        background-color: slategrey;
+    }
+
+    75% {
+        background-color: darkcyan;
+    }
+
+    100% {
+        background-color: gray;
+    }
 }
 
 .live-match {
