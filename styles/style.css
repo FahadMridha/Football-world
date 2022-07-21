@@ -10,6 +10,7 @@ footer {
     text-align: center;
     background-color: black;
     padding: 10px 5px;
+    margin-top: 100px;
 
 
 
@@ -53,7 +54,7 @@ footer {
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    /* justify-content: center; */
+
 
 
 
@@ -83,24 +84,36 @@ footer {
     padding: 10px 5px;
     border-radius: 5px;
     margin: 5px 20px;
-
-}
-
-.transfer-live .Blogs-button {
-    background-color: red;
-    color: white;
 }
 
 .blogs {
+
+    justify-content: center;
+    align-items: center;
     width: auto;
-    background-color: whitesmoke;
+    background-color: rgba(218, 199, 199, 0.329);
     border-radius: 15px;
+
+}
+
+.view-button {
+    text-align: center;
+}
+
+.view-button a {
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    background: #DD0000;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
 
 
 
 }
 
-/* ----footer style------ */
+/* ----footer class style------ */
 .goal h2 {
     text-align: center;
 }
@@ -151,7 +164,8 @@ footer {
     }
 
     .match-button,
-    .Groups-button {
+    .Groups-button,
+    .blog-button {
         border: 1px solid rgba(128, 128, 128, 0.411);
 
     }
@@ -160,6 +174,17 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+    }
+
+    .view-button a {
+        color: white;
+        padding: 10px 30px;
+        text-decoration: none;
+        background: #DD0000;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 200px;
+        display: none;
     }
 
     footer {
@@ -212,8 +237,21 @@ footer {
 
     }
 
+
     .side-itmes {
         grid-column: 1/-1;
+    }
+
+    .view-button a {
+        color: white;
+        padding: 10px 30px;
+        text-decoration: none;
+        background: #DD0000;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 200px;
+        display: initial;
+
     }
 
     footer {
